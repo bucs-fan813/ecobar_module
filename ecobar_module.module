@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+use Drupal\node\Entity\Node;
+use Drupal\Core\Form\FormStateInterface;
+function ecobar_module_form_node_location_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+$form['meta']['#access'] = false; 
+
+kint($form);
+//kint($form_state);
+kint($$form['meta']['#access']);
+//print __LINE__;
+} 

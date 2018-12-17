@@ -1,0 +1,12 @@
+{
+    "name": "hdweb/ecobar_module",
+	"description": "Built to use NGA'a Ecobar.js.",
+	"type": "drupal-custom-module",
+	"authors": [
+    {
+      "name": "John Russell (john@pocdigital.org)",
+      "homepage": "https://www.drupal.org/u/jb.fresh",
+      "role": "Maintainer"
+    }
+	]
+}

@@ -1,0 +1,7 @@
+name: 'Ecobar Module'
+core: 8.x
+type: module
+version: 1.0
+
+description: 'Custom Module for HDN'
+package: 'NGA'
