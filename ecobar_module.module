@@ -8,11 +8,15 @@
  */
 use Drupal\node\Entity\Node;
 use Drupal\Core\Form\FormStateInterface;
-function ecobar_module_form_node_location_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-$form['meta']['#access'] = false; 
+function ecobar_module_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
-kint($form);
-//kint($form_state);
-kint($$form['meta']['#access']);
-//print __LINE__;
-} 
+if ($form_id == 'node_location_form' || $form_id == 'node_location_edit_form') {
+$form['advanced']['#access'] = false;  
+$form['status']['#access'] = false;  
+
+ksm($form);
+ksm($form_id); 
+}
+
+
+}  
